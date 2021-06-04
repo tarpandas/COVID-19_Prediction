@@ -1,0 +1,162 @@
+{% extends 'layout.html'%}
+{% block title %}
+    Covid 19 Detection
+{% endblock %}
+{% block content %}
+<div class="body-content">
+	<h2>Covid-19 Detection</h2>
+	<h4>Detect if someone has Covid-19 using Machine Learning and Python!</h4>
+</div>
+<div class="container">
+	<form method="POST", action="{{url_for('output')}}">
+    <!--h2>---NOTE: Enter 1 for 'YES' and 0 for 'NO' at every box---</h2-->
+	<label for="a">Breathing Problem: </label>
+	<select id="a" name="a">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="b">Fever: </label>
+	<select id="b" name="b">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<br><br>
+
+	<label for="c">Dry Cough: </label>
+	<select id="c" name="c">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="d">Sore throat: </label>
+	<select id="d" name="d">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<br><br>
+	
+	<label for="e">Running Nose: </label>
+	<select id="e" name="e">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="f">Asthma: </label>
+	<select id="f" name="f">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<br><br>
+
+
+	<label for="g">Chronic Lung Disease: </label>
+	<select id="g" name="g">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="h">Headache: </label>
+	<select id="h" name="h">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<br><br>
+
+	<label for="i">Heart Disease: </label>
+	<select id="i" name="i">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+
+	<label for="j">Diabetes: </label>
+	<select id="j" name="j">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<br><br>
+
+	<label for="k">Hyper Tension: </label>
+	<select id="k" name="k">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="l">Fatigue: </label>
+	<select id="l" name="l">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<br><br>
+	
+	<label for="m">Gastrointestinal: </label>
+	<select id="m" name="m">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="n">Abroad travel: </label>
+	<select id="n" name="n">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<br><br>
+
+	<label for="o">Contact with COVID Patient: </label>
+	<select id="o" name="o">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="p">Attended Large Gathering: </label>
+	<select id="p" name="p">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+	
+	<br><br>
+
+	<label for="q">Visited Public Exposed Places: </label>
+	<select id="q" name="q">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+
+	<label for="r">Family working in Public Exposed Places: </label>
+	<select id="r" name="r">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+	<br><br>
+	<!--br> Breathing Problem: <input type="text", name='a'><br>
+	<br> Fever: <input type="text", name='b'><br>
+    <br> Dry Cough: <input type="text", name='c'><br>
+	<br> Sore throat: <input type="text", name='d'><br>
+    <br> Running Nose: <input type="text", name='e'><br>
+	<br> Asthma: <input type="text", name='f'><br>
+    <br> Chronic Lung Disease: <input type="text", name='g'><br>
+	<br> Headache: <input type="text", name='h'><br>
+    <br> Heart Disease: <input type="text", name='i'><br>
+	<br> Diabetes: <input type="text", name='j'><br>
+    <br> Hyper Tension: <input type="text", name='k'><br>
+	<br> Fatigue: <input type="text", name='l'><br>
+    <br> Gastrointestinal: <input type="text", name='m'><br>
+	<br> Abroad travel: <input type="text", name='n'><br>
+    <br> Contact with COVID Patient: <input type="text", name='o'><br>
+	<br> Attended Large Gathering: <input type="text", name='p'><br>
+    <br> Visited Public Exposed Places: <input type="text", name='q'><br>
+    <br> Family working in Public Exposed Places: <input type="text", name='r'><br-->
+
+	<br> <input type="submit", value="Predict">
+
+	</form>
+</div>
+{% endblock %}

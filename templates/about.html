@@ -1,0 +1,206 @@
+{% extends 'layout.html'%} 
+{% block title %}
+        About Us
+
+{% endblock %}
+   
+{% block content %}
+<html>
+    <head> 
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  h1
+  {
+      font-size: 40px;
+  }
+  h2{
+      color: rgb(196, 240, 211);
+  }
+ 
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    margin-top: 15px;
+    margin-left: 0;
+    font-size: 23px;
+  }
+  
+  .main-box{
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 4px 2px 4px rgba(224, 70, 185, 0.65);
+    border-radius: 10px;
+    background-color: rgba(121, 3, 29, 0.26);
+    text-align: center;
+    padding: 20px 0;
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-bottom: 16px;
+}
+
+.big-circle{
+    width: 150px;
+    height: 150px;
+    border: 10px solid #e046a0;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+.small-circle{
+    width: 140px;
+    height: 140px;
+    border: 10px solid #DAF9F6;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-image: url('/static/images/sumitgupta.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.small-circle2{
+    width: 140px;
+    height: 140px;
+    border: 10px solid #DAF9F6;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-image: url('static/images/IMG_20191027_124457_517.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.small-circle3{
+    width: 140px;
+    height: 140px;
+    border: 10px solid #DAF9F6;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-image: url('static/images/tarpandas.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.heading-name{
+  color: #ffffff;
+ margin: 3px 0;   
+}
+
+.heading-work{
+  color: #ffffff;
+    font-weight: 300;
+    margin: 3px 0;
+}
+
+p{
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+.follow_btn{
+    text-decoration: none;
+    background: #e046a5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px 1px rgba(224, 70, 178, 0.65);
+}
+
+.follow_btn:hover{
+    color: #e046d3;
+    background: #DAF9F6;
+    font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .main-box{
+  
+          display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+    }
+
+</style>
+
+    </head>
+    <body>
+		
+    
+    <div class="about-section">
+    <h1>About Us</h1>
+    <p>We are 3rd year CSE students from JIS College Of Engineering. The idea of our project is to present a website which is
+      able to predict whether a person is at risk of being
+      concerned by Covid-19 or not. To do
+      so, we use Machine Learning prediction techniques to
+      train the computer based on actual observable
+      outcomes made over thousands of observations stored
+      in a ‘.csv’ file. If a person want’s to know whether he/she runs a risk of Covid-19, he/she must put in his/her data based on the parameters asked through the website. After training the machine based on previous similar data, the machine predicts the possibility of Covid-19 of that person.</p>
+  </div>
+
+<h2 style="text-align:center"><br>Our Team</h2>
+  <div class="main-box">
+    <div class="big-circle">
+      <div class="small-circle"></div>
+    </div>
+    <h2 class="heading-name">Sumit Gupta</h2>
+    <h3 class="heading-work">Student</h3>
+    <p class="info1">
+      JIS College Of Engineering
+      <br>Computer Science & Engineering
+      <br>Roll No: 123180703100
+    </p>
+    <a href="https://www.linkedin.com/in/sumit-gupta-077b5016b" target="_blank" class="follow_btn">Follow</a>
+</div>
+
+
+<div class="main-box">
+    <div class="big-circle">
+        <div class="small-circle2"></div>
+      </div>
+    <h2 class="heading-name">Sumit Kumar Bera</h2>
+    <h3 class="heading-work">Student</h3>
+    <p class="info">
+      JIS College Of Engineering
+      <br>Computer Science & Engineering
+      <br>Roll No: 123180703101
+    </p>
+    <a href="https://www.linkedin.com/in/sumit-kumar-bera-a75b1a164" target="_blank" class="follow_btn">Follow</a>
+  </div>
+
+  <div class="main-box">
+    <div class="big-circle">
+        <div class="small-circle3"></div>
+      </div>
+    <h2 class="heading-name">Tarpan Das</h2>
+    <h3 class="heading-work">Student</h3>
+    <p class="info">
+      JIS College Of Engineering
+      <br>Computer Science & Engineering
+      <br>Roll No: 123180703112
+    </p>
+    <a href="https://www.linkedin.com/in/tarpan-das-1b563b16b" target="_blank" class="follow_btn">Follow</a>
+  </div>
+
+</body> 
+</html>
+{% endblock %}

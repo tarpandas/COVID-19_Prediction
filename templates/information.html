@@ -1,0 +1,91 @@
+{% extends 'layout.html'%}
+{% block title %}
+    Information
+{% endblock %}
+{% block content %}
+<head>
+<style>
+table {
+    align-self: center;
+    background-color: #af0101;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(67, 161, 83, 0.986);
+}
+  .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+  h1{
+    padding: 30px;
+    text-align: center;
+    background-color:rgba(87, 1, 1, 0.932);
+    color: white;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 23px;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>Important links regarding Covid-19 in India</h1>
+
+<table class="center">
+  <tr>
+    <th>Information</th>
+    <th>Links</th>
+  </tr>
+  <tr>
+    <td>VACCINATION</td>
+    <td>
+        <a href="https://www.cowin.gov.in/" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Covid Testing Facilities" style="width:30;height:30px;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td>MINISTRY OF HEALTH & FAMILY WELFARE</td>
+    <td>
+      <a href="https://mohfw.gov.in/" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Covid Testing Facilities" style="width:30;height:30px;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td>COVID19 STATEWISE STATUS</td>
+    <td>
+      <a href="hhttps://www.mygov.in/corona-data/covid19-statewise-status" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Covid Testing Facilities" style="width:30;height:30px;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td> State-wise list of official COVID-19 resources where you can find the availability of hospital beds.</td>
+    <td>
+      <a href="https://static.mygov.in/rest/s3fs-public/mygov_162159261551307401.pdf" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Covid Testing Facilities" style="width:30;height:30px;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td>West Bengal Hospital bed availability status</td>
+    <td>
+      <a href="https://excise.wb.gov.in/CHMS/Public/Page/CHMS_Public_Hospital_Bed_Availability.aspx" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Covid Testing Facilities" style="width:30;height:30px;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td>Helpline Numbers of States & Union Territories (UTs)</td>
+    <td>
+      <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Covid Testing Facilities" style="width:30;height:30px;"></a>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+{% endblock %}

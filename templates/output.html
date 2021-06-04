@@ -1,0 +1,80 @@
+{% extends 'layout.html'%}
+{% block title %}
+    output
+{% endblock %}
+{% block content %}
+<head>
+<style>
+    .hero {
+        position: relative; 
+        height: 78vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero::before {    
+        content: "";
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.6;
+    }
+    .result{
+        width: 80%;
+        background: rgba(5, 5, 5, 0.548);
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 50px 30px;
+        border-radius: 10px
+    }
+.returnbtn{
+    text-decoration: none;
+    background: #e04646;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.returnbtn:hover{
+    color: #e0465a;
+    background: #DAF9F6;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+    
+    <center>
+        <h1>Covid 19 prediction: </h1>
+        {%if data == 'Yes'%}
+        <div class="hero">
+			<div class="container result text-center">
+				<h1>You Need to do a Covid test</h1>
+                <p><h4>The below link is for the list of covid testing facilities in India.</h4>
+                <a href="https://www.icmr.gov.in/pdf/covid/labs/archive/COVID_Testing_Labs_30052021.pdf" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Covid Testing Facilities" style="width:30;height:30px;"></a>
+                </p>
+				<a href="/" class="returnbtn">Return</a>
+			</div>
+		</div>
+        {%endif%}
+        {%if data == 'No'%}
+        <div class="hero">
+			<div class="container result text-center">
+				<h1>No worries. Eat healthy, stay healthy</h1>
+                <p><h4>Protect yourself and others from COVID-19.</h4>
+                    <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank"><img src="https://img.icons8.com/plasticine/2x/external-link.png" alt="Guidelines to follow" style="width:30;height:30px;"></a>
+                    </p>
+				<a href="/" class="returnbtn">Return</a>
+			</div>
+		</div>
+        {%endif%}
+    </center>
+</body>
+{% endblock %}
